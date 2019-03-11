@@ -1,0 +1,265 @@
+          ADDM Report for Task 'TASK_473'
+          -------------------------------
+
+Analysis Period
+---------------
+AWR snapshot range from 180 to 181.
+Time period starts at 04-JUL-17 04.21.50 PM
+Time period ends at 04-JUL-17 05.00.19 PM
+
+Analysis Target
+---------------
+Database 'ORADLT' with DB ID 1600670143.
+Database version 12.1.0.2.0.
+ADDM performed an analysis of instance oradlt, numbered 1 and hosted at
+DENGLT-PC.
+
+Activity During the Analysis Period
+-----------------------------------
+Total database time was 385 seconds.
+The average number of active sessions was .17.
+
+Summary of Findings
+-------------------
+   Description                         Active Sessions      Recommendations
+                                       Percent of Activity
+   ----------------------------------  -------------------  ---------------
+1  PL/SQL Execution                    .08 | 48.39          1
+2  Top SQL Statements                  .08 | 48.39          1
+3  Hard Parse                          .05 | 27.04          0
+4  "User I/O" wait Class               .04 | 22.35          0
+5  Undo I/O                            .04 | 22.13          0
+6  Shared Pool Latches                 .01 | 3.91           0
+7  PL/SQL Compilation                  .01 | 3.83           1
+8  Hard Parse Due to Sharing Criteria  .01 | 3.41           1
+9  I/O Throughput                      0 | 1.74             2
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+          Findings and Recommendations
+          ----------------------------
+
+Finding 1: PL/SQL Execution
+Impact is .08 active sessions, 48.39% of total activity.
+--------------------------------------------------------
+PL/SQL execution consumed significant database time.
+
+   Recommendation 1: SQL Tuning
+   Estimated benefit is .08 active sessions, 48.39% of total activity.
+   -------------------------------------------------------------------
+   Action
+      Tune the entry point PL/SQL ID 92326. Refer to the PL/SQL documentation
+      for addition information.
+   Rationale
+      The SQL statement executed in container PDBORADLT with database ID
+      1427182925.
+   Rationale
+      Subprogam ID 30 of PL/SQL ID 11620 spent 186 seconds in execution.
+
+
+Finding 2: Top SQL Statements
+Impact is .08 active sessions, 48.39% of total activity.
+--------------------------------------------------------
+SQL statements consuming significant database time were found. These
+statements offer a good opportunity for performance improvement.
+
+   Recommendation 1: SQL Tuning
+   Estimated benefit is .08 active sessions, 48.39% of total activity.
+   -------------------------------------------------------------------
+   Action
+      Investigate the PL/SQL statement with SQL_ID "gf3s1cyuwtx2h" for
+      possible performance improvements. You can supplement the information
+      given here with an ASH report for this SQL_ID.
+      Related Object
+         SQL statement with SQL_ID gf3s1cyuwtx2h.
+         begin
+         :batch_id := dlt_sys$migrateobj.migrateOwner(pSourceOwner =>
+         'dba_dlt',
+         pMigrateMode => dlt_sys$migrateobj.M_ONLY_SCRIPT,
+         pDataTables  => null);
+         end;
+   Rationale
+      The SQL statement executed in container PDBORADLT with database ID
+      1427182925.
+   Rationale
+      The SQL Tuning Advisor cannot operate on PL/SQL statements.
+   Rationale
+      Database time for this SQL was divided as follows: 0% for SQL execution,
+      0% for parsing, 100% for PL/SQL execution and 0% for Java execution.
+   Rationale
+      SQL statement with SQL_ID "gf3s1cyuwtx2h" was executed 1 times and had
+      an average elapsed time of 249 seconds.
+
+
+Finding 3: Hard Parse
+Impact is .05 active sessions, 27.04% of total activity.
+--------------------------------------------------------
+Hard parsing of SQL statements was consuming significant database time.
+Hard parsing SQL statements that encountered parse errors was not consuming
+significant database time.
+Hard parses due to literal usage and cursor invalidation were not consuming
+significant database time.
+The Oracle instance memory (SGA and PGA) was adequately sized.
+
+   No recommendations are available.
+
+
+Finding 4: "User I/O" wait Class
+Impact is .04 active sessions, 22.35% of total activity.
+--------------------------------------------------------
+Wait class "User I/O" was consuming significant database time.
+The Oracle instance memory (SGA and PGA) was adequately sized.
+
+   No recommendations are available.
+
+
+Finding 5: Undo I/O
+Impact is .04 active sessions, 22.13% of total activity.
+--------------------------------------------------------
+Undo I/O was a significant portion (99%) of the total database I/O.
+
+   No recommendations are available.
+
+   Symptoms That Led to the Finding:
+   ---------------------------------
+      The throughput of the I/O subsystem was significantly lower than
+      expected.
+      Impact is 0 active sessions, 1.74% of total activity.
+         Wait class "User I/O" was consuming significant database time.
+         Impact is .04 active sessions, 22.35% of total activity.
+
+
+Finding 6: Shared Pool Latches
+Impact is .01 active sessions, 3.91% of total activity.
+-------------------------------------------------------
+Contention for latches related to the shared pool was consuming significant
+database time.
+Waits for "library cache load lock" amounted to 2% of database time.
+Waits for "cursor: pin S wait on X" amounted to 1% of database time.
+
+   No recommendations are available.
+
+   Symptoms That Led to the Finding:
+   ---------------------------------
+      Wait class "Concurrency" was consuming significant database time.
+      Impact is .01 active sessions, 3.91% of total activity.
+
+
+Finding 7: PL/SQL Compilation
+Impact is .01 active sessions, 3.83% of total activity.
+-------------------------------------------------------
+PL/SQL compilation consumed significant database time.
+
+   Recommendation 1: Application Analysis
+   Estimated benefit is .01 active sessions, 3.83% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Investigate the appropriateness of PL/SQL compilation. PL/SQL
+      compilation can be caused by DDL on dependent objects.
+
+
+Finding 8: Hard Parse Due to Sharing Criteria
+Impact is .01 active sessions, 3.41% of total activity.
+-------------------------------------------------------
+SQL statements with the same text were not shared because of cursor
+environment mismatch. This resulted in additional hard parses which were
+consuming significant database time.
+Common causes of environment mismatch are session NLS settings, SQL trace
+settings and optimizer parameters.
+
+   Recommendation 1: Application Analysis
+   Estimated benefit is .01 active sessions, 3.41% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Look for top reason for cursor environment mismatch in
+      V$SQL_SHARED_CURSOR.
+
+   Symptoms That Led to the Finding:
+   ---------------------------------
+      Hard parsing of SQL statements was consuming significant database time.
+      Impact is .05 active sessions, 27.04% of total activity.
+
+
+Finding 9: I/O Throughput
+Impact is 0 active sessions, 1.74% of total activity.
+-----------------------------------------------------
+The throughput of the I/O subsystem was significantly lower than expected.
+
+   Recommendation 1: Host Configuration
+   Estimated benefit is 0 active sessions, 1.74% of total activity.
+   ----------------------------------------------------------------
+   Action
+      Consider increasing the throughput of the I/O subsystem. Oracle's
+      recommended solution is to stripe all data files using the SAME
+      methodology. You might also need to increase the number of disks for
+      better performance.
+   Rationale
+      During the analysis period, the average data files' I/O throughput was
+      256 K per second for reads and 370 K per second for writes. The average
+      response time for single block reads was 44 milliseconds.
+
+   Recommendation 2: Host Configuration
+   Estimated benefit is 0 active sessions, 1.74% of total activity.
+   ----------------------------------------------------------------
+   Action
+      The performance of some data and temp files was significantly worse than
+      others. If striping all files using the SAME methodology is not
+      possible, consider striping these file over multiple disks.
+   Rationale
+      For file D:\APP\ORACLE\ORADATA\ORADLT\UNDOTBS01.DBF in the root
+      container, the average response time for single block reads was 290
+      milliseconds and the total excess I/O wait was 66 seconds.
+      Related Object
+         Database file
+         "D:\APP\ORACLE\ORADATA\ORADLT\UNDOTBS01.DBF"
+   Rationale
+      For file D:\APP\ORACLE\ORADATA\ORADLT\PDBORADLT\PDBSEED_TEMP012017-01-04
+      _05-08-40-PM.DBF in container PDBORADLT with database ID 1427182925, the
+      average response time for single block reads was 55 milliseconds and the
+      total excess I/O wait was 9 seconds.
+      Related Object
+         Database file
+         "D:\APP\ORACLE\ORADATA\ORADLT\PDBORADLT\PDBSEED_TEMP012017-01-04_05-0
+         8-40-PM.DBF"
+   Rationale
+      For file D:\APP\ORACLE\ORADATA\ORADLT\SYSAUX01.DBF in the root
+      container, the average response time for single block reads was 50
+      milliseconds and the total excess I/O wait was 0 seconds.
+      Related Object
+         Database file
+         "D:\APP\ORACLE\ORADATA\ORADLT\SYSAUX01.DBF"
+   Rationale
+      For file D:\APP\ORACLE\ORADATA\ORADLT\USERS01.DBF in the root container,
+      the average response time for single block reads was 45 milliseconds and
+      the total excess I/O wait was 0 seconds.
+      Related Object
+         Database file
+         "D:\APP\ORACLE\ORADATA\ORADLT\USERS01.DBF"
+
+   Symptoms That Led to the Finding:
+   ---------------------------------
+      Wait class "User I/O" was consuming significant database time.
+      Impact is .04 active sessions, 22.35% of total activity.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+          Additional Information
+          ----------------------
+
+Miscellaneous Information
+-------------------------
+Wait class "Application" was not consuming significant database time.
+Wait class "Commit" was not consuming significant database time.
+Wait class "Configuration" was not consuming significant database time.
+CPU was not a bottleneck for the instance.
+Wait class "Network" was not consuming significant database time.
+Session connect and disconnect calls were not consuming significant database
+time.
+
+

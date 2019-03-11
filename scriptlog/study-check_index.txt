@@ -1,0 +1,19 @@
+请指定表的拥有者(owner),表名称(table_name)
+Enter value for 1: med2
+Enter value for 2: bigtable
+指定的拥有者： MED2                                                                                                                                                                                                                                                                                         
+指定的表名称： BIGTABLE                                                                                                                                                                                                                                                                                     
+
+表[MED2.BIGTABLE]的index状态结果
+
+OWNER      INDEX_NAME                     INDEX_TYPE           PARTITION_NAME                 SUBPARTITION_NAME              STATUS   TABLESPACE_NAME                                                                                                                                                       
+---------- ------------------------------ -------------------- ------------------------------ ------------------------------ -------- ------------------------------                                                                                                                                        
+MED2       IDXFT_BIGTABLE_CHEM_NAME       DOMAIN               NO                             NO                             INPROGRS                                                                                                                                                                       
+MED2       IDX_BIGTABLE_DRUG_ID           NORMAL               NO                             NO                             VALID    USERS                                                                                                                                                                 
+MED2       SYS_IL0000092338C00022$$       LOB                  NO                             NO                             VALID    USERS                                                                                                                                                                 
+MED2       SYS_IL0000092338C00016$$       LOB                  NO                             NO                             VALID    USERS                                                                                                                                                                 
+
+请执行下面SQL,重建不可用index
+SQL                                                                                                                                                                                                                                                                                                         
+----------------------------------------------------------------------------------------------------                                                                                                                                                                                                        
+DOMAIN INDEX [MED2.IDXFT_BIGTABLE_CHEM_NAME] need to manually rebuild.                                                                                                                                                                                                                                      

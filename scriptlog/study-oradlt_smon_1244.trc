@@ -1,0 +1,85 @@
+Trace file D:\APP\ORACLE\diag\rdbms\oradlt\oradlt\trace\oradlt_smon_1244.trc
+Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+Windows NT Version V6.1 Service Pack 1
+CPU                 : 1 - type 8664, 1 Physical Cores
+Process Affinity    : 0x0x0000000000000000
+Memory (Avail/Total): Ph:228M/2047M, Ph+PgF:1684M/4283M
+Instance name: oradlt
+Redo thread mounted by this instance: 1
+Oracle process number: 15
+Windows thread id: 1244, image: ORACLE.EXE (SMON)
+
+
+*** 2017-06-14 16:59:04.307
+*** SESSION ID:(15.58849) 2017-06-14 16:59:04.307
+*** CLIENT ID:() 2017-06-14 16:59:04.307
+*** SERVICE NAME:(SYS$BACKGROUND) 2017-06-14 16:59:04.307
+*** MODULE NAME:() 2017-06-14 16:59:04.307
+*** CLIENT DRIVER:() 2017-06-14 16:59:04.307
+*** ACTION NAME:() 2017-06-14 16:59:04.307
+*** CONTAINER ID:(1) 2017-06-14 16:59:04.307
+
+MMNL absent for 82950 secs; Foregrounds taking over
+MMNL absent for 51023 secs; Foregrounds taking over
+ktsmgtur(): TUR was not tuned for 2513 secs
+
+*** 2017-06-15 13:34:21.983
+ktsmg_advance_slot(): MMNL advances slot after 2714 seconds
+ktut_advance_slot(): MMNL advances slot after 314 seconds
+MMNL absent for 80214 secs; Foregrounds taking over
+Parallel Transaction recovery caught exception 30319
+
+*** 2017-06-21 16:10:53.906
+Parallel Transaction recovery caught error 30319
+
+*** 2017-06-21 16:13:25.225
+Parallel Transaction recovery caught exception 30319
+Parallel Transaction recovery caught error 30319
+
+*** 2017-06-21 16:15:55.429
+Parallel Transaction recovery caught exception 30319
+Parallel Transaction recovery caught error 30319
+Parallel Transaction recovery caught exception 30319
+
+*** 2017-06-21 16:18:25.553
+Parallel Transaction recovery caught error 30319
+
+*** 2017-06-21 16:20:55.693
+Parallel Transaction recovery caught exception 30319
+
+*** 2017-06-21 16:20:55.740
+Parallel Transaction recovery caught error 30319
+
+*** 2017-06-21 16:23:25.818
+Parallel Transaction recovery caught exception 30319
+Parallel Transaction recovery caught error 30319
+
+*** 2017-06-21 16:25:56.021
+Parallel Transaction recovery caught exception 30319
+Parallel Transaction recovery caught error 30319
+
+*** 2017-06-21 16:28:26.850
+Parallel Transaction recovery caught exception 30319
+Parallel Transaction recovery caught error 30319
+
+*** 2017-06-21 16:30:56.741
+Parallel Transaction recovery caught exception 30319
+Parallel Transaction recovery caught error 30319
+Parallel Transaction recovery caught exception 30319
+
+*** 2017-06-21 16:33:26.895
+Parallel Transaction recovery caught error 30319
+
+*** 2017-06-21 16:35:57.980
+Parallel Transaction recovery caught exception 30319
+Parallel Transaction recovery caught error 30319
+
+*** 2017-06-21 16:37:14.819
+Dead transaction  0x0005.014.000009d5 recovered by 1 server(s)
+SMON: Parallel transaction recovery tried
+MMNL absent for 55893 secs; Foregrounds taking over
+
+*** 2017-06-29 14:21:58.463
+ktut_advance_slot(): MMNL advances slot after 55971 seconds
+

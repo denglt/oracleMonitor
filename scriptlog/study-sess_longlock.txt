@@ -1,0 +1,17 @@
+
+长时间锁信息(锁定时间>60s)
+                                                                            Lock  Transaction  Lock
+   INST_ID        SID    SERIAL# USERNAME   PADDR            STATUS        Time(s)      Time(s) Type       Lock Mode      Locked Object Info                                           EVENT                                    EVENT PARA                                         sql_id                                                           SQL_FULLTEXT                                             cascade_sql_id                                               CASCADE_SQL_FULLTEXT                                         OSUSER               MACHINE              PROGRAM                                  MODULE                                   ACTION                           CLIENT_INFO                                                    CLIENT_IDENTIFIER
+---------- ---------- ---------- ---------- ---------------- ---------- ---------- ------------ ---------- -------------- ------------------------------------------------------------ ---------------------------------------- -------------------------------------------------- -------------------- ---------------------------------------------------------------------------------------------------- -------------------- ---------------------------------------------------------------------------------------------------- -------------------- -------------------- ---------------------------------------- ---------------------------------------- -------------------------------- -------------------------------------------------------------- ---------------------------------
+         1         62      56091 MED2       000007FF31E43FC0 INACTIVE        61961        61961 TM         row-X (SX)     MED2.OLT_DRUG_CATALOGUE[type=TABLE;oid=92121]                SQL*Net message from client              driver id= 0x0000000054435000;#bytes= 1;0          9m7787camwh4m        begin :id := sys.dbms_transaction.local_transaction_id; end;                                                                                                                                                                   denglt-PC\denglt     WORKGROUP\DENGLT-PC  plsqldev.exe                             PL/SQL Developer                         SQL Window - Query data of table
+
+
+         1         62      56091 MED2       000007FF31E43FC0 INACTIVE           76        61961 TM         row-X (SX)     MED2.OLT_DRUG_CATALOGUE_BAK[type=TABLE;oid=92170]            SQL*Net message from client              driver id= 0x0000000054435000;#bytes= 1;0          9m7787camwh4m        begin :id := sys.dbms_transaction.local_transaction_id; end;                                                                                                                                                                   denglt-PC\denglt     WORKGROUP\DENGLT-PC  plsqldev.exe                             PL/SQL Developer                         SQL Window - Query data of table
+
+
+
+终止lock的命令
+
+   INST_ID KILL_SESSION                             Kill(Linux)                    Kill(Windows)                  Cancel(Unix)                   10237 Event
+---------- ---------------------------------------- ------------------------------ ------------------------------ ------------------------------ ------------------------------
+         1 alter system kill session '62,56091';    kill -9 1844                   orakill 62 1844                kill -URG 1844                 @cancel_sql 62 56091

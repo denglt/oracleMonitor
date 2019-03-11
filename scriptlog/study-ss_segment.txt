@@ -1,0 +1,26 @@
+请指定要检查空间使用情况的对象信息
+
+输入对象的拥有者(owner): med2
+对象类型取值：[TABLE;TABLE PARTITION;TABLE SUBPARTITION;INDEX;INDEX PARTITION;INDEX SUBPARTITION;CLUSTER;LOB;LOB PARTITION;LOB SUBPARTITION]
+输入对象的类型(segment_type): table
+输入对象的名称(segment_name): bigtable
+输入对象的分区名称(partition_name): 
+
+
+对象MED2.BIGTABLE的使用情况如下：                                                                                                                                                                                                                                                                           
+
+FS1 Blocks(0 to 25% free space )  = 1 Bytes = 8192                                                                                                                                                                                                                                                          
+FS2 Blocks(25% to 50% free space) = 672 Bytes = 5505024                                                                                                                                                                                                                                                     
+FS3 Blocks(50% to 75% free space) = 0 Bytes = 0                                                                                                                                                                                                                                                             
+FS4 Blocks(75% to 100% free space)= 30947 Bytes = 253517824                                                                                                                                                                                                                                                 
+Full Blocks = 32921 Bytes =269688832                                                                                                                                                                                                                                                                        
+Unformatted Blocks = 508 Bytes =4161536                                                                                                                                                                                                                                                                     
+-----------------------------                                                                                                                                                                                                                                                                               
+Total blocks............................65408                                                                                                                                                                                                                                                               
+Total bytes.............................535822336                                                                                                                                                                                                                                                           
+Total MBytes............................511                                                                                                                                                                                                                                                                 
+Unused blocks (above HWM)...............0                                                                                                                                                                                                                                                                   
+Unused bytes (above HWM)................0                                                                                                                                                                                                                                                                   
+Last used extent file id................9                                                                                                                                                                                                                                                                   
+Last used extent block_id...............97536                                                                                                                                                                                                                                                               
+Last used block.........................1024                                                                                                                                                                                                                                                                

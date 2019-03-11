@@ -1,0 +1,7 @@
+
+当前事务使用UNDO表空间的情况(占用undo空间最多前10条数据)
+
+   INST_ID 表空间名称           回滚段名称                     事物占用undo块数量 事物占用undo空间(M) SEG_ACTIVE_SPACE SEG_UNEXPIRED_SPACE START_DATE                 SID    SERIAL# SQL_ID        TRAN_STATUS  SESS_STATUS     USERNAME                         PROGRAM                                                  MACHINE                              PADDR
+---------- -------------------- ------------------------------ ------------------ ------------------- ---------------- ------------------- ------------------- ---------- ---------- ------------- ------------ ------------ --------------- ------------------------------------------------ ---------------------------------------------------------------- ----------------
+         1 UNDOTBS1             _SYSSMU5_3484600714$                        12971              101.34           104.13                     2017-06-15 17:42:48         70      39529 9m7787camwh4m ACTIVE       INACTIVE     MED2            plsqldev.exe                                     WORKGROUP\DENGLT-PC                                              000007FF31E49A40
+         1 UNDOTBS1             _SYSSMU6_3822221795$                          363                2.84             4.13                   1 2017-06-15 18:09:06         62      22225 9m7787camwh4m ACTIVE       INACTIVE     MED2            plsqldev.exe                                     WORKGROUP\DENGLT-PC                                              000007FF31E43FC0

@@ -1,0 +1,29 @@
+
+sga相关参数
+
+   INST_ID 参数名称                       参数值                                                                                                                                                        
+---------- ------------------------------ ------------------------------                                                                                                                                
+         1 db_cache_size                  0                                                                                                                                                             
+         1 lock_sga                       FALSE                                                                                                                                                         
+         1 log_buffer                     4956K                                                                                                                                                         
+         1 memory_max_target              820M                                                                                                                                                          
+         1 memory_target                  820M                                                                                                                                                          
+         1 result_cache_max_size          2112K                                                                                                                                                         
+         1 sga_max_size                   820M                                                                                                                                                          
+         1 sga_target                     0                                                                                                                                                             
+         1 shared_pool_reserved_size      6501171                                                                                                                                                       
+         1 shared_pool_size               0                                                                                                                                                             
+         1 streams_pool_size              0                                                                                                                                                             
+
+sga内存使用情况
+
+   INST_ID POOL                       内存大小(M) 空闲内存(M)                                                                                                                                           
+---------- -------------------------- ----------- -----------                                                                                                                                           
+         1 buffer_cache                       216           0                                                                                                                                           
+         1 fixed_sga                         2.91           0                                                                                                                                           
+         1 java pool                            4           4                                                                                                                                           
+         1 large pool                        7.53           8                                                                                                                                           
+         1 log_buffer                        5.09           0                                                                                                                                           
+         1 shared pool                      77.97          48                                                                                                                                           
+         1 shared_io_pool                      20           0                                                                                                                                           
+         1 Total                            333.5          60                                                                                                                                           
