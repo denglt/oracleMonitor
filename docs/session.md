@@ -1,5 +1,5 @@
-## <a name='session'>session监控</a>
-<a href='index.html' target="_blank">Index</a>
+## session监控
+[Index](catalog.md)
 **相关脚本**
 
 ```
