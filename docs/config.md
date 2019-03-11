@@ -1,5 +1,5 @@
 ## <a name='config'>配置运行环境</a>
-[Index](catalog.md)
+[目录](../catalog.md)
 ### <a name='connection'>配置数据库连接信息</a>
 
 ---

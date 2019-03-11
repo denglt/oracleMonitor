@@ -1,5 +1,5 @@
 ## session监控
-[Index](catalog.md)
+[目录](../catalog.md)
 **相关脚本**
 
 ```
