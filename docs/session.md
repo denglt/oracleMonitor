@@ -10,7 +10,7 @@ sess_cpu.sql		sess_longlock.sql	sess_tempseg.sql
 
 
 
-###Lock监控
+###lock
 
 > Lock在数据库中无处不在，监控当前数据库中Lock的运行情况，对发现问题、排除故障十分有用
 >
