@@ -5,9 +5,20 @@
   - [linux|mac操作系统](/docs/config.md#conn-mac)
   - [连接数据库事例](/docs/config.md#conn-example)
 - [配置运行时参数](/docs/config.md#runtime)
-
-- 配置数据库连接信息
-  - window操作系统](/docs/config.md#conn-win)
-  - linux|mac操作系统
-  - 连接数据库事例
-- 配置运行时参数
+## [session监控](/docs/session.md)
+- [Lock监控](/docs/session.md#lock)
+  - [阻塞Lock](/docs/session.md#sess_blocklock)
+  - [长时间未释放的Lock](/docs/session.md#sess_longlock)
+- [正在运行的慢SQL信息](/docs/session.md#sess_longops)
+- [session使用PGA内存大小](/docs/session.md#sess_pga)
+- [session占用undo空间大小](/docs/session.md#sess_undo)
+- [session使用cpu时间](/docs/session.md#sess_cpu)
+- [session占用临时表空间大小](/docs/session.md#sess_tempseg)
+- [session占用临时表空间详细信息](/docs/session.md#sess_tempseg_detail)
+- [session使用cursor](/docs/session.md#sess_cursor)
+- [session整体情况](/docs/session.md#sess_info)
+- [当前等待事件](/docs/session.md#wait_event)
+  - [当前非空闲等待事件](/docs/session.md#se_noidle)
+  - [当前热点块等待事件](/docs/session.md#se_hot_block)
+  - [当前Hight Water等待事件](/docs/session.md#se_hw)
+  - [当前指定的等待事件](/docs/session.md#se_wait)
