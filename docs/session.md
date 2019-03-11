@@ -28,7 +28,7 @@ sess_cpu.sql		sess_longlock.sql	sess_tempseg.sql
 
 ![sess_blocklock](../images/sess_blocklock.png)
 
-脚本自动用`open_file_text`配置的工具打开[阻塞锁日志](scriptlog/study-sess_blocklock.txt)，该文件保存在`script_output_dir`配置的文件夹中
+脚本自动用`open_file_text`配置的工具打开[阻塞锁日志](../scriptlog/study-sess_blocklock.txt)，该文件保存在`script_output_dir`配置的文件夹中
 
 ![sess_blocklock2](../images/sess_blocklock2.png)
 
