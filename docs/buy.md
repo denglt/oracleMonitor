@@ -34,8 +34,3 @@
 附送：`性能分析SQL和数据库管理`
 
 ![oracle_docs](../images/oracle_docs.png)
-
-| name  | age | sex | xixing |
-| ----- | --- | --- | ------ |
-| dengl | 10  |     | swing  |
-| zyy   | 8   |     |        |
