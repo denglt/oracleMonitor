@@ -1,5 +1,6 @@
 ## session监控
 [目录](../catalog.md)
+
 **相关脚本**
 
 ```
@@ -25,11 +26,11 @@ sess_cpu.sql		sess_longlock.sql	sess_tempseg.sql
 正在生成阻塞锁信息，请稍等．．．
 ```
 
-![sess_blocklock](image/sess_blocklock.png)
+![sess_blocklock](/images/sess_blocklock.png)
 
 脚本自动用`open_file_text`配置的工具打开[阻塞锁日志](scriptlog/study-sess_blocklock.txt)，该文件保存在`script_output_dir`配置的文件夹中
 
-![sess_blocklock2](image/sess_blocklock2.png)
+![sess_blocklock2](/images/sess_blocklock2.png)
 
 > * 以树状格式展示lock的阻塞关系
 > * `LOCKKEY`格式:  INSTANCE_ID+SID+SERIAL#
@@ -40,7 +41,7 @@ sess_cpu.sql		sess_longlock.sql	sess_tempseg.sql
 > ```
 >
 
-> 详细输出内容见：[阻塞锁日志](scriptlog/study-sess_blocklock.txt)
+> 详细输出内容见：[阻塞锁日志](/scriptlog/study-sess_blocklock.txt)
 
 #### <a name='sess_longlock'>长时间未释放的Lock</a>
 
@@ -56,7 +57,7 @@ Specify [60] for lock time
 正在生成长时间锁信息，请稍等．．．
 ```
 
-![sess_longlock](image/sess_longlock.png)
+![sess_longlock](/images/sess_longlock.png)
 
 > `Lock Time(s)`:Lock时长，单位秒
 >
@@ -64,7 +65,7 @@ Specify [60] for lock time
 >
 > `Locked Object Info`:Lock定对象信息                                          `
 
-> 详细输出内容：[长锁日志](scriptlog/study-sess_longlock.txt)
+> 详细输出内容：[长锁日志](/scriptlog/study-sess_longlock.txt)
 
 **在输出文件最后为释放Lock的操作指令：**
 
@@ -89,9 +90,9 @@ Specify [60] for lock time
 正在生成耗时SQL信息，请稍等．．．
 ```
 
-![sess_longops](image/sess_longops.png)
+![sess_longops](/images/sess_longops.png)
 
-> 详细输出内容：[慢SQL日志](scriptlog/study-sess_longops.txt)
+> 详细输出内容：[慢SQL日志](/scriptlog/study-sess_longops.txt)
 
 ### <a name='sess_pga'>session使用PGA内存大小</a>
 
@@ -110,9 +111,9 @@ Specify [60] for lock time
          1         19      29226 528                                 3            13               10          15 ACTIVE   cgtc5gb7c4g07
 ```
 
-![sess_pga](image/sess_pga.png)
+![sess_pga](/images/sess_pga.png)
 
-> 详细输出内容：[session使用PGA日志](scriptlog/study-sess_pga.txt)
+> 详细输出内容：[session使用PGA日志](/scriptlog/study-sess_pga.txt)
 
 
 
@@ -132,9 +133,9 @@ Specify [60] for lock time
 open [E:\oradba_output\study-sess_undo.txt]...
 ```
 
-![sess_undo](image/sess_undo.png)
+![sess_undo](/images/sess_undo.png)
 
-> 详细输出内容：[session占用undo空间大小日志](scriptlog/study-sess_undo.txt)
+> 详细输出内容：[session占用undo空间大小日志](/scriptlog/study-sess_undo.txt)
 
 ### <a name='sess_cpu'>session使用cpu时间</a>
 
@@ -159,9 +160,9 @@ session使用cpu的情况(使用cpu时间最多前10条数据)
          1         62      22225               1 INACTIVE 2017-06-15 17:00:56 9m7787camwh4m MED2                   plsqldev.exe
 ```
 
-![sess_cpu](image/sess_cpu.png)
+![sess_cpu](/images/sess_cpu.png)
 
-> 详细输出内容：[session使用cpu日志](scriptlog/study-sess_cpu.txt)
+> 详细输出内容：[session使用cpu日志](/scriptlog/study-sess_cpu.txt)
 
 ### <a name='sess_tempseg'> session占用临时表空间大小</a>
 
@@ -180,9 +181,9 @@ session使用temp表空间的情况(占用临时表空间最多前10条数据)
 please more [E:\oradba_output\study-sess_tempseg.txt]。
 ```
 
-![sess_tempseg](image/sess_tempseg.png)
+![sess_tempseg](/images/sess_tempseg.png)
 
-> 详细输出内容：[session占用temp tablespace的大小日志](scriptlog/study-sess_tempseg.txt)
+> 详细输出内容：[session占用temp tablespace的大小日志](/scriptlog/study-sess_tempseg.txt)
 
 ### <a name='sess_tempseg_detail'>session占用临时表空间详细信息</a>
 
@@ -190,9 +191,9 @@ session使用temp表空间的情况(占用临时表空间最多前10条数据)
 >
 > Usage: @sess_tempseg_detail <sid>
 
-![sess_tempseg_detail](image/sess_tempseg_detail.png)
+![sess_tempseg_detail](/images/sess_tempseg_detail.png)
 
-> 详细输出内容：[session占用temp tablespace详细信息日志](scriptlog/study-sess_tempseg_detail_52.txt)
+> 详细输出内容：[session占用temp tablespace详细信息日志](/scriptlog/study-sess_tempseg_detail_52.txt)
 
 ### <a name='sess_cursor'>session使用cursor总体情况</a>
 
@@ -214,9 +215,9 @@ Tuning OPEN_CURSORS
 .....
 ```
 
-![sess_cursor](image/sess_cursor.png)
+![sess_cursor](/images/sess_cursor.png)
 
-> 详细输出内容：[session使用cursor总体情况日志](scriptlog/study-sess_cursor.txt)
+> 详细输出内容：[session使用cursor总体情况日志](/scriptlog/study-sess_cursor.txt)
 
 ### <a name='sess_info'>session整体情况</a>
 
@@ -255,7 +256,7 @@ latch_child.sql		latch_obj.sql		se_hot_block.sql	se_hw.sql		se_noidle.sql		se_wa
 
 > 可以立马使用 `@sql_info gvhhm0q3n6n2k`分析等待事情执行的sql
 
-[study-se_noidle.txt](scriptlog/study-se_noidle.txt)
+[study-se_noidle.txt](/scriptlog/study-se_noidle.txt)
 
 #### <a name='se_hot_block'>当前热点块等待事件</a>
 
