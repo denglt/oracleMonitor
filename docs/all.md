@@ -2,7 +2,7 @@
 
 ## <a name='install'>安装监控脚本</a>
 
-[Index](index.html)
+[目录](../catalog.md)
 
 
 **安装相关脚本：**
@@ -48,7 +48,7 @@ SQL> @dltInstaller
 ```
 
 
-[完整安装日志](scriptlog\install.log)
+[完整安装日志](../scriptlog/install.log)
 ## <a name='config'>配置运行环境</a>
 
 ### 配置数据库连接信息
@@ -234,11 +234,11 @@ sess_cpu.sql		sess_longlock.sql	sess_tempseg.sql
 正在生成阻塞锁信息，请稍等．．．
 ```
 
-![sess_blocklock](image/sess_blocklock.png)
+![sess_blocklock](../images/sess_blocklock.png)
 
-脚本自动用`open_file_text`配置的工具打开[阻塞锁日志](scriptlog/study-sess_blocklock.txt)，该文件保存在`script_output_dir`配置的文件夹中
+脚本自动用`open_file_text`配置的工具打开[阻塞锁日志](../scriptlog/study-sess_blocklock.txt)，该文件保存在`script_output_dir`配置的文件夹中
 
-![sess_blocklock2](image/sess_blocklock2.png)
+![sess_blocklock2](../images/sess_blocklock2.png)
 
 > * 以树状格式展示lock的阻塞关系
 > * `LOCKKEY`格式:  INSTANCE_ID+SID+SERIAL#
@@ -249,7 +249,7 @@ sess_cpu.sql		sess_longlock.sql	sess_tempseg.sql
 > ```
 >
 
-> 详细输出内容见：[阻塞锁日志](scriptlog/study-sess_blocklock.txt)
+> 详细输出内容见：[阻塞锁日志](../scriptlog/study-sess_blocklock.txt)
 
 #### <a name='sess_longlock'>长时间未释放的Lock</a>
 
@@ -265,7 +265,7 @@ Specify [60] for lock time
 正在生成长时间锁信息，请稍等．．．
 ```
 
-![sess_longlock](image/sess_longlock.png)
+![sess_longlock](../images/sess_longlock.png)
 
 > `Lock Time(s)`:Lock时长，单位秒
 >
@@ -273,7 +273,7 @@ Specify [60] for lock time
 >
 > `Locked Object Info`:Lock定对象信息                                          `
 
-> 详细输出内容：[长锁日志](scriptlog/study-sess_longlock.txt)
+> 详细输出内容：[长锁日志](../scriptlog/study-sess_longlock.txt)
 
 **在输出文件最后为释放Lock的操作指令：**
 
@@ -298,9 +298,9 @@ Specify [60] for lock time
 正在生成耗时SQL信息，请稍等．．．
 ```
 
-![sess_longops](image/sess_longops.png)
+![sess_longops](../images/sess_longops.png)
 
-> 详细输出内容：[长操作sql日志](scriptlog/study-sess_longops.txt)
+> 详细输出内容：[长操作sql日志](../scriptlog/study-sess_longops.txt)
 
 ### <a name='sess_pga'>session使用PGA内存大小</a>
 
@@ -319,9 +319,9 @@ Specify [60] for lock time
          1         19      29226 528                                 3            13               10          15 ACTIVE   cgtc5gb7c4g07
 ```
 
-![sess_pga](image/sess_pga.png)
+![sess_pga](../images/sess_pga.png)
 
-> 详细输出内容：[session使用PGA日志](scriptlog/study-sess_pga.txt)
+> 详细输出内容：[session使用PGA日志](../scriptlog/study-sess_pga.txt)
 
 
 
@@ -341,9 +341,9 @@ Specify [60] for lock time
 open [E:\oradba_output\study-sess_undo.txt]...
 ```
 
-![sess_undo](image/sess_undo.png)
+![sess_undo](../images/sess_undo.png)
 
-> 详细输出内容：[session占用undo空间大小日志](scriptlog/study-sess_undo.txt)
+> 详细输出内容：[session占用undo空间大小日志](../scriptlog/study-sess_undo.txt)
 
 ### <a name='sess_cpu'>session使用cpu时间</a>
 
@@ -368,9 +368,9 @@ session使用cpu的情况(使用cpu时间最多前10条数据)
          1         62      22225               1 INACTIVE 2017-06-15 17:00:56 9m7787camwh4m MED2                   plsqldev.exe
 ```
 
-![sess_cpu](image/sess_cpu.png)
+![sess_cpu](../images/sess_cpu.png)
 
-> 详细输出内容：[session使用cpu日志](scriptlog/study-sess_cpu.txt)
+> 详细输出内容：[session使用cpu日志](../scriptlog/study-sess_cpu.txt)
 
 ### <a name='sess_tempseg'> session占用临时表空间大小</a>
 
@@ -389,9 +389,9 @@ session使用temp表空间的情况(占用临时表空间最多前10条数据)
 please more [E:\oradba_output\study-sess_tempseg.txt]。
 ```
 
-![sess_tempseg](image/sess_tempseg.png)
+![sess_tempseg](../images/sess_tempseg.png)
 
-> 详细输出内容：[session占用temp tablespace的大小日志](scriptlog/sess_tempseg.txt)
+> 详细输出内容：[session占用temp tablespace的大小日志](../scriptlog/sess_tempseg.txt)
 
 ### <a name='sess_tempseg_detail'>session占用临时表空间详细信息</a>
 
@@ -399,9 +399,9 @@ session使用temp表空间的情况(占用临时表空间最多前10条数据)
 >
 > Usage: @sess_tempseg_detail <sid>
 
-![sess_tempseg_detail](image/sess_tempseg_detail.png)
+![sess_tempseg_detail](../images/sess_tempseg_detail.png)
 
-> 详细输出内容：[session占用temp tablespace详细信息日志](scriptlog/sess_tempseg_detail_52.txt)
+> 详细输出内容：[session占用temp tablespace详细信息日志](../scriptlog/sess_tempseg_detail_52.txt)
 
 ### <a name='sess_cursor'>session使用cursor总体情况</a>
 
@@ -423,9 +423,9 @@ Tuning OPEN_CURSORS
 .....
 ```
 
-![sess_cursor](image/sess_cursor.png)
+![sess_cursor](../images/sess_cursor.png)
 
-> 详细输出内容：[session使用cursor总体情况日志](scriptlog/sess_cursor.txt)
+> 详细输出内容：[session使用cursor总体情况日志](../scriptlog/sess_cursor.txt)
 
 ### <a name='sess_info'>session整体情况</a>
 
@@ -464,7 +464,7 @@ latch_child.sql		latch_obj.sql		se_hot_block.sql	se_hw.sql		se_noidle.sql		se_wa
 
 > 可以立马使用 `@sql_info gvhhm0q3n6n2k`分析等待事情执行的sql
 
-[study-se_noidle.txt](scriptlog/study-se_noidle.txt)
+[study-se_noidle.txt](../scriptlog/study-se_noidle.txt)
 
 #### <a name='se_hot_block'>当前热点块等待事件</a>
 
@@ -651,7 +651,7 @@ Predicate Information (identified by operation id):
 please more [E:\oradba_output\study-xplain.txt]。
 ```
 
-> 详细输出内容：[SQL的执行计划日志](scriptlog/study-xplain.txt)
+> 详细输出内容：[SQL的执行计划日志](../scriptlog/study-xplain.txt)
 
 ### <a name='sql_info'>分析SQL运行信息</a>
 
@@ -724,9 +724,9 @@ SQL参数信息如下：
 please more [E:\oradba_output\study-sql_info_7xbz512sqhw2k.txt]。
 ```
 
-![sql_info](image/sql_info.png)
+![sql_info](../images/sql_info.png)
 
-> 详细输出内容：[分析SQL运行信息日志](scriptlog/study-sql_info_7xbz512sqhw2k.txt)
+> 详细输出内容：[分析SQL运行信息日志](../scriptlog/study-sql_info_7xbz512sqhw2k.txt)
 
 ### <a name='sql_profile'>sql profile 固化outline</a>
 
@@ -1101,7 +1101,7 @@ Predicate Information (identified by operation id):
 please more [E:\oradba_output\study-sql_tuning.txt]。
 ```
 
-> 详细输出内容：[调优日志](scriptlog/study-sql_tuning.txt)
+> 详细输出内容：[调优日志](../scriptlog/study-sql_tuning.txt)
 
 #### <a name='sqltune_sqlid'>调优v$sql_plan中执行计划</a>
 
@@ -1297,7 +1297,7 @@ Predicate Information (identified by operation id):
 15:28:36 study>
 ```
 
-> 详细输出内容：[调优日志](scriptlog/study-sql_tuning2_6m0xgkc6rhrf9.txt)
+> 详细输出内容：[调优日志](../scriptlog/study-sql_tuning2_6m0xgkc6rhrf9.txt)
 
 
 
@@ -1348,14 +1348,14 @@ Predicate Information (identified by operation id):
   请输入sql_id
   Specify [6m0xgkc6rhrf9] for sql_id
   正在tuning sql,请耐心等候．．．
-  任务[DLT_SQLACCESS_201706291605]分析完成。
+任务[DLT_SQLACCESS_201706291605]分析完成。
 
   任务信息如下:
-     TASK_ID STATUS     RECOMMENDATION_COUNT
+   TASK_ID STATUS     RECOMMENDATION_COUNT
   ---------- ---------- --------------------
           85 COMPLETED                     1
 
-  建议执行以下优化脚本:
+建议执行以下优化脚本:
   -----------------------------------------------------------------------------------------
   Rem  SQL Access Advisor: Version 12.1.0.2.0 - Production
   Rem
@@ -1385,7 +1385,7 @@ Predicate Information (identified by operation id):
       COMPUTE STATISTICS;
 
   -----------------
-  please more [E:\oradba_output\study-sql_access3_6m0xgkc6rhrf9.txt]。
+please more [E:\oradba_output\study-sql_access3_6m0xgkc6rhrf9.txt]。
   ```
 
   ​
@@ -1418,7 +1418,7 @@ please more [E:\oradba_output\study-sql_monitor_list_201706301432-24.html]。
 
 在浏览器中打开:
 
-![rpt_sml](image/rpt_sml.png)
+![rpt_sml](../images/rpt_sml.png)
 
 #### <a name='rpt_sm'>SQL监控报告</a>
 
@@ -1437,7 +1437,7 @@ please more [E:\oradba_output\study-sql_monitor_list_201706301432-24.html]。
    <!--
       var version = "12.1.0.2.0";
      var swf_base_path = "http://download.oracle.com/otn_software/";
-    
+
          document.write('<script language="javascript" type="text/javascript" ' +
                         'src="' + swf_base_path + 'emviewers/scripts/activeReportInit.js?' +
                         Math.floor((new Date()).getTime()/(7*24*60*60*1000)) +
@@ -1520,7 +1520,7 @@ open [E:\oradba_output\study-sql_monitor_a3w7p0wh33s3d.html]...
 
 在浏览器中打开:
 
-![rpt_sm](image/rpt_sm.png)
+![rpt_sm](../images/rpt_sm.png)
 
 #### <a name='rpt_sd'>SQL监控详细信息</a>
 
@@ -1539,7 +1539,7 @@ open [E:\oradba_output\study-sql_monitor_a3w7p0wh33s3d.html]...
    <!--
       var version = "12.1.0.2.0";
      var swf_base_path = "http://download.oracle.com/otn_software/";
-    
+
          document.write('<script language="javascript" type="text/javascript" ' +
                         'src="' + swf_base_path + 'emviewers/scripts/activeReportInit.js?' +
                         Math.floor((new Date()).getTime()/(7*24*60*60*1000)) +
@@ -1761,7 +1761,7 @@ ADDITIONAL INFORMATION SECTION
 please more [E:\oradba_output\study-auto_tuning_task_EXEC_370_EXEC_387.txt]。
 ```
 
-> 详细输出内容：[自动sql调优报告:study-auto_tuning_task_EXEC_370_EXEC_387.txt](scriptlog/study-auto_tuning_task_EXEC_370_EXEC_387.txt)
+> 详细输出内容：[自动sql调优报告:study-auto_tuning_task_EXEC_370_EXEC_387.txt](../scriptlog/study-auto_tuning_task_EXEC_370_EXEC_387.txt)
 
 ## <a name='event'>跟踪事件</a>
 
@@ -1835,7 +1835,7 @@ please more [E:\oradba_output\study-oradlt_ora_1968.trc]。
 如要分析文件，请使用：@tkprof E:\oradba_output\study-oradlt_ora_1968.trc
 ```
 
-[study-oradlt_ora_1968.trc](scriptlog/study-oradlt_ora_1968.trc)
+[study-oradlt_ora_1968.trc](../scriptlog/study-oradlt_ora_1968.trc)
 
 #### <a name='tkprof' >tkprof 分析跟踪文件</a>
 
@@ -1855,7 +1855,7 @@ Copyright (c) 1982, 2014, Oracle and/or its affiliates.  All rights reserved.
 please more [E:\oradba_output\study-oradlt_ora_1968.txt]。
 ```
 
-[study-oradlt_ora_1968.txt](scriptlog/study-oradlt_ora_1968.txt)
+[study-oradlt_ora_1968.txt](../scriptlog/study-oradlt_ora_1968.txt)
 
 ### <a name=trace_10053>10053</a>
 
@@ -1899,7 +1899,7 @@ please more [E:\oradba_output\study-oradlt_ora_448.trc]。
 如要分析文件，请使用：@tkprof E:\oradba_output\study-oradlt_ora_448.trc
 ```
 
-[study-oradlt_ora_448.trc](scriptlog/study-oradlt_ora_448.trc)
+[study-oradlt_ora_448.trc](../scriptlog/study-oradlt_ora_448.trc)
 
 ### <a name='10500'>10500</a>
 
@@ -1973,7 +1973,7 @@ System altered.
 15:55:05 study>
 ```
 
-[study-oradlt_smon_1244.trc](scriptlog/study-oradlt_smon_1244.trc)
+[study-oradlt_smon_1244.trc](../scriptlog/study-oradlt_smon_1244.trc)
 
 ### <a name='cancle_sql'>10237 取消正在运行的SQL</a>
 
@@ -2149,9 +2149,9 @@ INST_ID 表空间        表空间大小(M) 已使用空间(M) 空闲空间(M) �
 please more [E:\oradba_output\study-ss_tablespace.txt]。
 ```
 
-![ss_tablespace](image/ss_tablespace.png)
+![ss_tablespace](../images/ss_tablespace.png)
 
-> 详细输出内容：[表空间使用情况](scriptlog/study-ss_tablespace.txt)
+> 详细输出内容：[表空间使用情况](../scriptlog/study-ss_tablespace.txt)
 
 ### <a name='ss_temptablespace'>临时表空间使用情况</a>
 
@@ -2177,7 +2177,7 @@ TEMP                       20             2          18   10.00%              13
          1 TEMP                                      20             2          18   10.00%              13        11
 ```
 
-![ss_temptablespace](image/ss_temptablespace.png)
+![ss_temptablespace](../images/ss_temptablespace.png)
 
 
 
@@ -2232,7 +2232,7 @@ UNDOTBS1                       UNEXPIRED           61.31
          1 UNDOTBS1     _SYSSMU6_38                     363                 2.84         4.13
 ```
 
-> 详细输出内容：[undo使用输出日志](scriptlog/study-ss_undo.txt)
+> 详细输出内容：[undo使用输出日志](../scriptlog/study-ss_undo.txt)
 
 ### <a name='ss_datafile'>数据文件使用情况</a>
 
@@ -2251,9 +2251,9 @@ UNDOTBS1                       UNEXPIRED           61.31
 please more [E:\oradba_output\study-ss_datafile.txt]。
 ```
 
-![ss_datafile](image/ss_datafile.png)
+![ss_datafile](../images/ss_datafile.png)
 
-> 详细输出内容：[数据文件使用情况日志](scriptlog/study-ss_datafile.txt)
+> 详细输出内容：[数据文件使用情况日志](../scriptlog/study-ss_datafile.txt)
 
 ### <a name='ss_tempdatafile'>临时表空间文件使用情况</a>
 
@@ -2272,9 +2272,9 @@ UNDOTBS1                       UNEXPIRED           61.31
 please more [E:\oradba_output\study-ss_tempdatafile.txt]。
 ```
 
-![ss_tempdatafile](image/ss_tempdatafile.png)
+![ss_tempdatafile](../images/ss_tempdatafile.png)
 
-> 详细输出内容：[临时表空间文件使用情况日志](scriptlog/study-ss_tempdatafile.txt)
+> 详细输出内容：[临时表空间文件使用情况日志](../scriptlog/study-ss_tempdatafile.txt)
 
 ### <a name='ss_onlinelog'>联机日志文件信息</a>
 
@@ -2346,7 +2346,7 @@ please more [E:\oradba_output\study-ss_onlinelog.txt]。
 
 ```
 
-> 详细输出内容：[联机日志文件信息日志](scriptlog/study-sm_db_buffer.txt)
+> 详细输出内容：[联机日志文件信息日志](../scriptlog/study-sm_db_buffer.txt)
 
 ### <a name='ss_table_size'>Table占用空间信息</a>
 
@@ -2385,7 +2385,7 @@ SYS_LOB0000092338C00016$$      DRUG_PHOTO       SYS_IL0000092338C00016$$       U
 please more [E:\oradba_output\study-ss_table_size_MED2_bigtable.txt]。
 ```
 
-> 详细输出内容：[Table占用空间信息日志](scriptlog/study-ss_table_size_MED2_bigtable.txt)
+> 详细输出内容：[Table占用空间信息日志](../scriptlog/study-ss_table_size_MED2_bigtable.txt)
 
 ### <a name='ss_segemnt'>segment对象占用空间情况</a>
 
@@ -2422,7 +2422,7 @@ Last used block.........................1024
 please more [E:\oradba_output\study-ss_segment.txt]。
 ```
 
-> 详细输出日志：[segment占用空间日志](scriptlog/study-ss_segment.txt)
+> 详细输出日志：[segment占用空间日志](../scriptlog/study-ss_segment.txt)
 
 ### <a name='seg_advisor'>segment对象空间分析顾问</a>
 
@@ -2493,7 +2493,7 @@ MESG_ID                       : 36
 please more [E:\oradba_output\study-seg_advisor.txt]。
 ```
 
-> 详细输出日志：[segment对象分析顾问日志](scriptlog/study-seg_advisor.txt)
+> 详细输出日志：[segment对象分析顾问日志](../scriptlog/study-seg_advisor.txt)
 
 ### <a name='ss_datafile_io'>数据文件IO信息统计</a>
 
@@ -2519,9 +2519,9 @@ USERS           D:\APP\ORACLE\ORADATA\ORADLT\USERS01.DBF                   99   
 please more [E:\oradba_output\study-ss_datafile_io.txt]。
 ```
 
-![ss_datafile_io](image/ss_datafile_io.png)
+![ss_datafile_io](../images/ss_datafile_io.png)
 
-> 详细输出日志：[数据文件IO统计日志](scriptlog/ss_datafile_io.txt)
+> 详细输出日志：[数据文件IO统计日志](../scriptlog/ss_datafile_io.txt)
 
 ### <a name='ss_segment_io'>segment对象IO统计</a>
 
@@ -2568,9 +2568,9 @@ APEX_04020 WWV_FLOW_LOG_HISTORY_IDX1                                     INDEX  
 please more [E:\oradba_output\study-ss_segment_io.txt]。
 ```
 
-![ss_segment_io](image/ss_segment_io.png)
+![ss_segment_io](../images/ss_segment_io.png)
 
-> 详细输出日志：[segment对象IO统计日志](scriptlog/study-ss_segment_io.txt)
+> 详细输出日志：[segment对象IO统计日志](../scriptlog/study-ss_segment_io.txt)
 
 ### <a name='asm'>ASM信息</a>
 
@@ -3186,9 +3186,9 @@ end;
 18:14:40 study>
 ```
 
-![ddl_domain_idx](image/ddl_domain_idx.png)
+![ddl_domain_idx](../images/ddl_domain_idx.png)
 
-[study-dll_domain_idx_MED2_IDXFT_BIGTABLE_CHEM_NAME.sql](scriptlog/study-dll_domain_idx_MED2_IDXFT_BIGTABLE_CHEM_NAME.sql)
+[study-dll_domain_idx_MED2_IDXFT_BIGTABLE_CHEM_NAME.sql](../scriptlog/study-dll_domain_idx_MED2_IDXFT_BIGTABLE_CHEM_NAME.sql)
 
 #### <a name='dll_object'>获取Object创建脚本</a>
 
@@ -3435,7 +3435,7 @@ end;
 please more [E:\oradba_output\study-ddl_object_med2_bigtable.sql]。
 ```
 
-[study-ddl_object_med2_bigtable.sql](scriptlog/study-ddl_object_med2_bigtable.sql)
+[study-ddl_object_med2_bigtable.sql](../scriptlog/study-ddl_object_med2_bigtable.sql)
 
 #### <a name='dll_type'>获取特定type对象的创建脚本</a>
 
@@ -3466,7 +3466,7 @@ please more [E:\oradba_output\study-ddl_object_med2_bigtable.sql]。
 please more [E:\oradba_output\study-ddl_object_med2_SEQUENCE.sql]。
 ```
 
-[study-ddl_object_med2_SEQUENCE.sql](scriptlog/study-ddl_object_med2_SEQUENCE.sql)
+[study-ddl_object_med2_SEQUENCE.sql](../scriptlog/study-ddl_object_med2_SEQUENCE.sql)
 
 #### <a name='dll_schema'>获取schema中所有对象的创建脚本</a>
 
@@ -3514,7 +3514,7 @@ end;
 please more [E:\oradba_output\study-ddl_schema_dba_dlt.sql]。
 ```
 
-[study-ddl_schema_dba_dlt.sql](scriptlog/study-ddl_schema_dba_dlt.sql)
+[study-ddl_schema_dba_dlt.sql](../scriptlog/study-ddl_schema_dba_dlt.sql)
 
 ### <a name='check_index'>检查index</a>
 
@@ -3549,7 +3549,7 @@ DOMAIN INDEX [MED2.IDXFT_BIGTABLE_CHEM_NAME] need to manually rebuild.
 please more [E:\oradba_output\study-check_index.txt]。
 ```
 
-[study-check_index.txt](scriptlog/study-check_index.txt)
+[study-check_index.txt](../scriptlog/study-check_index.txt)
 
 > 这个例子没有体现出‘重建不可用index的 SQL’，以后补个操作分区表，index损坏的例子。
 
@@ -3661,7 +3661,7 @@ please more [E:\oradba_output\addmrpt_1_180_181.txt]。
 
 ```
 
-[addmrpt_1_180_181.txt](scriptlog/addmrpt_1_180_181.txt)
+[addmrpt_1_180_181.txt](../scriptlog/addmrpt_1_180_181.txt)
 
 ### 解密加密包
 
@@ -3969,4 +3969,4 @@ END;
 ```
 
 > 如果不幸，你有代码需要解密，可以联系我。
-## <a name='buy'>获取脚本</a>
+## [获取脚本](buy.md)
