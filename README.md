@@ -25,4 +25,4 @@
 > 不管是Oracle刚入门新人、还是工作多年的老司机，我相信都能够从这套脚本学到东西，并提高工作效率，使自己的工作更得心应手。
 
 [session监控](/docs/session.md)
-  [Lock监控](/docs/session.md#lock)
+  [Lock监控](/docs/session.md#Lock监控)
