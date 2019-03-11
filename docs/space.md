@@ -1,5 +1,6 @@
 ## <a name='space'>空间和文件监控</a>
-<a href='index.html' target="_blank">Index</a>
+[目录](../catalog.md)
+
 **相关脚本**
 
 ```
@@ -37,9 +38,9 @@ INST_ID 表空间        表空间大小(M) 已使用空间(M) 空闲空间(M) �
 please more [E:\oradba_output\study-ss_tablespace.txt]。
 ```
 
-![ss_tablespace](image/ss_tablespace.png)
+![ss_tablespace](../images/ss_tablespace.png)
 
-> 详细输出内容：[表空间使用情况](scriptlog/study-ss_tablespace.txt)
+> 详细输出内容：[表空间使用情况](../scriptlog/study-ss_tablespace.txt)
 
 ### <a name='ss_temptablespace'>临时表空间使用情况</a>
 
@@ -65,7 +66,7 @@ TEMP                       20             2          18   10.00%              13
          1 TEMP                                      20             2          18   10.00%              13        11
 ```
 
-![ss_temptablespace](image/ss_temptablespace.png)
+![ss_temptablespace](../images/ss_temptablespace.png)
 
 
 
@@ -120,7 +121,7 @@ UNDOTBS1                       UNEXPIRED           61.31
          1 UNDOTBS1     _SYSSMU6_38                     363                 2.84         4.13
 ```
 
-> 详细输出内容：[undo使用输出日志](scriptlog/study-ss_undo.txt)
+> 详细输出内容：[undo使用输出日志](../scriptlog/study-ss_undo.txt)
 
 ### <a name='ss_datafile'>数据文件使用情况</a>
 
@@ -139,9 +140,9 @@ UNDOTBS1                       UNEXPIRED           61.31
 please more [E:\oradba_output\study-ss_datafile.txt]。
 ```
 
-![ss_datafile](image/ss_datafile.png)
+![ss_datafile](../images/ss_datafile.png)
 
-> 详细输出内容：[数据文件使用情况日志](scriptlog/study-ss_datafile.txt)
+> 详细输出内容：[数据文件使用情况日志](../scriptlog/study-ss_datafile.txt)
 
 ### <a name='ss_tempdatafile'>临时表空间文件使用情况</a>
 
@@ -160,9 +161,9 @@ UNDOTBS1                       UNEXPIRED           61.31
 please more [E:\oradba_output\study-ss_tempdatafile.txt]。
 ```
 
-![ss_tempdatafile](image/ss_tempdatafile.png)
+![ss_tempdatafile](../images/ss_tempdatafile.png)
 
-> 详细输出内容：[临时表空间文件使用情况日志](scriptlog/study-ss_tempdatafile.txt)
+> 详细输出内容：[临时表空间文件使用情况日志](../scriptlog/study-ss_tempdatafile.txt)
 
 ### <a name='ss_onlinelog'>联机日志文件信息</a>
 
@@ -234,7 +235,7 @@ please more [E:\oradba_output\study-ss_onlinelog.txt]。
 
 ```
 
-> 详细输出内容：[联机日志文件信息日志](scriptlog/study-sm_db_buffer.txt)
+> 详细输出内容：[联机日志文件信息日志](../scriptlog/study-sm_db_buffer.txt)
 
 ### <a name='ss_table_size'>Table占用空间信息</a>
 
@@ -273,7 +274,7 @@ SYS_LOB0000092338C00016$$      DRUG_PHOTO       SYS_IL0000092338C00016$$       U
 please more [E:\oradba_output\study-ss_table_size_MED2_bigtable.txt]。
 ```
 
-> 详细输出内容：[Table占用空间信息日志](scriptlog/study-ss_table_size_MED2_bigtable.txt)
+> 详细输出内容：[Table占用空间信息日志](../scriptlog/study-ss_table_size_MED2_bigtable.txt)
 
 ### <a name='ss_segemnt'>segment对象占用空间情况</a>
 
@@ -310,7 +311,7 @@ Last used block.........................1024
 please more [E:\oradba_output\study-ss_segment.txt]。
 ```
 
-> 详细输出日志：[segment占用空间日志](scriptlog/study-ss_segment.txt)
+> 详细输出日志：[segment占用空间日志](../scriptlog/study-ss_segment.txt)
 
 ### <a name='seg_advisor'>segment对象空间分析顾问</a>
 
@@ -381,7 +382,7 @@ MESG_ID                       : 36
 please more [E:\oradba_output\study-seg_advisor.txt]。
 ```
 
-> 详细输出日志：[segment对象分析顾问日志](scriptlog/study-seg_advisor.txt)
+> 详细输出日志：[segment对象分析顾问日志](../scriptlog/study-seg_advisor.txt)
 
 ### <a name='ss_datafile_io'>数据文件IO信息统计</a>
 
@@ -407,9 +408,9 @@ USERS           D:\APP\ORACLE\ORADATA\ORADLT\USERS01.DBF                   99   
 please more [E:\oradba_output\study-ss_datafile_io.txt]。
 ```
 
-![ss_datafile_io](image/ss_datafile_io.png)
+![ss_datafile_io](../images/ss_datafile_io.png)
 
-> 详细输出日志：[数据文件IO统计日志](scriptlog/study-ss_datafile_io.txt)
+> 详细输出日志：[数据文件IO统计日志](../scriptlog/study-ss_datafile_io.txt)
 
 ### <a name='ss_segment_io'>segment对象IO统计</a>
 
@@ -456,9 +457,9 @@ APEX_04020 WWV_FLOW_LOG_HISTORY_IDX1                                     INDEX  
 please more [E:\oradba_output\study-ss_segment_io.txt]。
 ```
 
-![ss_segment_io](image/ss_segment_io.png)
+![ss_segment_io](../images/ss_segment_io.png)
 
-> 详细输出日志：[segment对象IO统计日志](scriptlog/study-ss_segment_io.txt)
+> 详细输出日志：[segment对象IO统计日志](../scriptlog/study-ss_segment_io.txt)
 
 ### <a name='ss_asm'>ASM信息</a>
 
@@ -468,4 +469,3 @@ please more [E:\oradba_output\study-ss_segment_io.txt]。
 > * ASM磁盘组文件整体占用空间情况
 > * ASM磁盘空间的使用情况
 > * ASM磁盘组中文件信息
-

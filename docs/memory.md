@@ -1,5 +1,6 @@
 ## <a name='memory'>内存监控</a>
-<a href='index.html' target="_blank">Index</a>
+[目录](../catalog.md)
+
 **相关脚本**
 
 ```

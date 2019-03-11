@@ -1,5 +1,6 @@
 ## <a name='event'>跟踪事件</a>
-<a href='index.html' target="_blank">Index</a>
+[目录](../catalog.md)
+
 **相关脚本**
 
 ```
@@ -69,7 +70,7 @@ please more [E:\oradba_output\study-oradlt_ora_1968.trc]。
 如要分析文件，请使用：@tkprof E:\oradba_output\study-oradlt_ora_1968.trc
 ```
 
-[study-oradlt_ora_1968.trc](scriptlog/study-oradlt_ora_1968.trc)
+[study-oradlt_ora_1968.trc](../scriptlog/study-oradlt_ora_1968.trc)
 
 #### <a name='tkprof' >tkprof 分析跟踪文件</a>
 
@@ -91,7 +92,7 @@ Copyright (c) 1982, 2014, Oracle and/or its affiliates.  All rights reserved.
 please more [E:\oradba_output\study-oradlt_ora_1968.txt]。
 ```
 
-[study-oradlt_ora_1968.txt](scriptlog/study-oradlt_ora_1968.txt)
+[study-oradlt_ora_1968.txt](../scriptlog/study-oradlt_ora_1968.txt)
 
 ### <a name=trace_10053>10053</a>
 
@@ -135,7 +136,7 @@ please more [E:\oradba_output\study-oradlt_ora_448.trc]。
 如要分析文件，请使用：@tkprof E:\oradba_output\study-oradlt_ora_448.trc
 ```
 
-[study-oradlt_ora_448.trc](scriptlog/study-oradlt_ora_448.trc)
+[study-oradlt_ora_448.trc](../scriptlog/study-oradlt_ora_448.trc)
 
 ### <a name='trace_10500'>10500</a>
 
@@ -209,7 +210,7 @@ System altered.
 15:55:05 study>
 ```
 
-[study-oradlt_smon_1244.trc](scriptlog/study-oradlt_smon_1244.trc)
+[study-oradlt_smon_1244.trc](../scriptlog/study-oradlt_smon_1244.trc)
 
 ### <a name='cancle_sql'>10237 取消正在运行的SQL</a>
 

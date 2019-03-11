@@ -1,5 +1,6 @@
 ## <a name='tool'>工具脚本</a>
-<a href='index.html' target="_blank">Index</a>
+[目录](../catalog.md)
+
 ### <a name='ddl'>获取DDL脚本</a>
 
 以下脚本功能基于后台`dlt_sys$MigrateObj`包实现，该包实现了oracle的所有几乎对象
@@ -267,9 +268,9 @@ end;
 18:14:40 study>
 ```
 
-![ddl_domain_idx](image/ddl_domain_idx.png)
+![ddl_domain_idx](../images/ddl_domain_idx.png)
 
-[study-ddl_domain_idx_MED2_IDXFT_BIGTABLE_CHEM_NAME.sql](scriptlog/study-ddl_domain_idx_MED2_IDXFT_BIGTABLE_CHEM_NAME.sql)
+[study-ddl_domain_idx_MED2_IDXFT_BIGTABLE_CHEM_NAME.sql](../scriptlog/study-ddl_domain_idx_MED2_IDXFT_BIGTABLE_CHEM_NAME.sql)
 
 #### <a name='ddl_object'>获取Object创建脚本</a>
 
@@ -516,7 +517,7 @@ end;
 please more [E:\oradba_output\study-ddl_object_med2_bigtable.sql]。
 ```
 
-[study-ddl_object_med2_bigtable.sql](scriptlog/study-ddl_object_med2_bigtable.sql)
+[study-ddl_object_med2_bigtable.sql](../scriptlog/study-ddl_object_med2_bigtable.sql)
 
 #### <a name='ddl_type'>获取特定type对象的创建脚本</a>
 
@@ -547,7 +548,7 @@ please more [E:\oradba_output\study-ddl_object_med2_bigtable.sql]。
 please more [E:\oradba_output\study-ddl_object_med2_SEQUENCE.sql]。
 ```
 
-[study-ddl_object_med2_SEQUENCE.sql](scriptlog/study-ddl_object_med2_SEQUENCE.sql)
+[study-ddl_object_med2_SEQUENCE.sql](../scriptlog/study-ddl_object_med2_SEQUENCE.sql)
 
 #### <a name='ddl_schema'>获取schema中所有对象的创建脚本</a>
 
@@ -595,7 +596,7 @@ end;
 please more [E:\oradba_output\study-ddl_schema_dba_dlt.sql]。
 ```
 
-[study-ddl_schema_dba_dlt.sql](scriptlog/study-ddl_schema_dba_dlt.sql)
+[study-ddl_schema_dba_dlt.sql](../scriptlog/study-ddl_schema_dba_dlt.sql)
 
 ### <a name='check_index'>检查index</a>
 
@@ -630,7 +631,7 @@ DOMAIN INDEX [MED2.IDXFT_BIGTABLE_CHEM_NAME] need to manually rebuild.
 please more [E:\oradba_output\study-check_index.txt]。
 ```
 
-[study-check_index.txt](scriptlog/study-check_index.txt)
+[study-check_index.txt](../scriptlog/study-check_index.txt)
 
 > 这个例子没有体现出‘重建不可用index的 SQL’，以后补个操作分区表，index损坏的例子。
 
@@ -742,7 +743,7 @@ please more [E:\oradba_output\addmrpt_1_180_181.txt]。
 
 ```
 
-[addmrpt_1_180_181.txt](scriptlog/addmrpt_1_180_181.txt)
+[addmrpt_1_180_181.txt](../scriptlog/addmrpt_1_180_181.txt)
 
 ### <a name='unwrap'>解密加密包</a>
 

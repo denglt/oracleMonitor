@@ -1,5 +1,6 @@
 ## <a name='sql'>SQL监控和调优</a>
-<a href='index.html' target="_blank">Index</a>
+[目录](../catalog.md)
+
 **相关脚本**
 
 ```
@@ -127,7 +128,7 @@ Predicate Information (identified by operation id):
 please more [E:\oradba_output\study-xplain.txt]。
 ```
 
-> 详细输出内容：[SQL的执行计划日志](scriptlog/study-xplain.txt)
+> 详细输出内容：[SQL的执行计划日志](../scriptlog/study-xplain.txt)
 
 ### <a name='sql_info'>分析SQL运行信息</a>
 
@@ -202,7 +203,7 @@ SQL参数信息如下：
 
 ![sql_info](image/sql_info.png)
 
-> 详细输出内容：[分析SQL运行信息日志](scriptlog/study-sql_info_7xbz512sqhw2k.txt)
+> 详细输出内容：[分析SQL运行信息日志](../scriptlog/study-sql_info_7xbz512sqhw2k.txt)
 
 ### <a name='sql_profile'>sql profile 固化outline</a>
 
@@ -577,7 +578,7 @@ Predicate Information (identified by operation id):
 please more [E:\oradba_output\study-sql_tuning.txt]。
 ```
 
-> 详细输出内容：[调优日志](scriptlog/study-sql_tuning.txt)
+> 详细输出内容：[调优日志](../scriptlog/study-sql_tuning.txt)
 
 #### <a name='sqltune_sqlid'>调优v$sql_plan中执行计划</a>
 
@@ -773,7 +774,7 @@ Predicate Information (identified by operation id):
 15:28:36 study>
 ```
 
-> 详细输出内容：[调优日志](scriptlog/study-sql_tuning2_6m0xgkc6rhrf9.txt)
+> 详细输出内容：[调优日志](../scriptlog/study-sql_tuning2_6m0xgkc6rhrf9.txt)
 
 
 
@@ -824,14 +825,14 @@ Predicate Information (identified by operation id):
   请输入sql_id
   Specify [6m0xgkc6rhrf9] for sql_id
   正在tuning sql,请耐心等候．．．
-  任务[DLT_SQLACCESS_201706291605]分析完成。
+任务[DLT_SQLACCESS_201706291605]分析完成。
 
   任务信息如下:
-     TASK_ID STATUS     RECOMMENDATION_COUNT
+   TASK_ID STATUS     RECOMMENDATION_COUNT
   ---------- ---------- --------------------
           85 COMPLETED                     1
 
-  建议执行以下优化脚本:
+建议执行以下优化脚本:
   -----------------------------------------------------------------------------------------
   Rem  SQL Access Advisor: Version 12.1.0.2.0 - Production
   Rem
@@ -861,7 +862,7 @@ Predicate Information (identified by operation id):
       COMPUTE STATISTICS;
 
   -----------------
-  please more [E:\oradba_output\study-sql_access3_6m0xgkc6rhrf9.txt]。
+please more [E:\oradba_output\study-sql_access3_6m0xgkc6rhrf9.txt]。
   ```
 
   ​
@@ -913,7 +914,7 @@ please more [E:\oradba_output\study-sql_monitor_list_201706301432-24.html]。
    <!--
       var version = "12.1.0.2.0";
      var swf_base_path = "http://download.oracle.com/otn_software/";
-    
+
          document.write('<script language="javascript" type="text/javascript" ' +
                         'src="' + swf_base_path + 'emviewers/scripts/activeReportInit.js?' +
                         Math.floor((new Date()).getTime()/(7*24*60*60*1000)) +
@@ -1015,7 +1016,7 @@ open [E:\oradba_output\study-sql_monitor_a3w7p0wh33s3d.html]...
    <!--
       var version = "12.1.0.2.0";
      var swf_base_path = "http://download.oracle.com/otn_software/";
-    
+
          document.write('<script language="javascript" type="text/javascript" ' +
                         'src="' + swf_base_path + 'emviewers/scripts/activeReportInit.js?' +
                         Math.floor((new Date()).getTime()/(7*24*60*60*1000)) +
@@ -1237,5 +1238,4 @@ ADDITIONAL INFORMATION SECTION
 please more [E:\oradba_output\study-auto_tuning_task_EXEC_370_EXEC_387.txt]。
 ```
 
-> 详细输出内容：[自动sql调优报告:study-auto_tuning_task_EXEC_370_EXEC_387.txt](scriptlog/study-auto_tuning_task_EXEC_370_EXEC_387.txt)
-
+> 详细输出内容：[自动sql调优报告:study-auto_tuning_task_EXEC_370_EXEC_387.txt](../scriptlog/study-auto_tuning_task_EXEC_370_EXEC_387.txt)
