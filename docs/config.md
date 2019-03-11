@@ -1,5 +1,5 @@
 ## <a name='config'>配置运行环境</a>
-<a href='index.html' target="_blank">Index</a>
+[Index](catalog.md)
 ### <a name='connection'>配置数据库连接信息</a>
 
 ---
