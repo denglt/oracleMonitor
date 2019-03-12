@@ -76,4 +76,4 @@
 - [检查index](/docs/tool.md#check_index)
 - [包装系统脚](/docs/tool.md#wrapper)
 - [解密加密包](/docs/tool.md#unwrap)
-## [怎样获取以上](/docs/buy.md)
+## [怎样获取以上脚本](/docs/buy.md)
