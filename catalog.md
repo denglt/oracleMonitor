@@ -1,5 +1,6 @@
 # 目录
-## [安装监控脚本](/docs/config.md)
+## [安装监控脚本](/docs/install.md)
+## [配置运行环境](/doc/config.md)
 - [配置数据库连接信息](/docs/config.md#connection)
   - [window操作系统](/docs/config.md#conn-win)
   - [linux|mac操作系统](/docs/config.md#conn-mac)
