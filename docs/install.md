@@ -43,6 +43,3 @@ SQL> @dltInstaller
 ...
 后台脚本安装完成!
 ```
-
-
-[完整安装日志](scriptlog\install.log)
