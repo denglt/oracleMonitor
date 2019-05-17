@@ -1,6 +1,6 @@
 ## <a name='install'>安装监控脚本</a>
 
-<a href='index.html' target="_blank">Index</a>
+[目录](../catalog.md)
 
 **安装相关脚本：**
 
