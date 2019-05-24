@@ -1,5 +1,5 @@
 # <a name='preface'> 一套较全面的oracle数据库监控管理脚本</a>
-[脚本目录](catalog.md)
+[脚本目录](catalog.md) [获取脚本](/docs/buy.md)
 
 >Oracle无疑是当今最优秀的数据库之一，在功能、性能等方面都非常的卓越。但要学好、掌握好Oracle也是一件不易的事件。
 
@@ -25,5 +25,4 @@
 
 > 不管是Oracle刚入门新人、还是工作多年的老司机，我相信都能够从这套脚本学到东西，并提高工作效率，使自己的工作更得心应手。
 
-[脚本目录](catalog.md)
-[获取脚本](/docs/buy.md)
+[脚本目录](catalog.md) [获取脚本](/docs/buy.md)
