@@ -895,7 +895,7 @@ please more [E:\oradba_output\study-sql_monitor_list_201706301432-24.html]。
 
 在浏览器中打开:
 
-![rpt_sml](image/rpt_sml.png)
+![rpt_sml](../images/rpt_sml.png)
 
 #### <a name='rpt_sm'>SQL监控报告</a>
 
@@ -997,7 +997,7 @@ open [E:\oradba_output\study-sql_monitor_a3w7p0wh33s3d.html]...
 
 在浏览器中打开:
 
-![rpt_sm](image/rpt_sm.png)
+![rpt_sm](../images/rpt_sm.png)
 
 #### <a name='rpt_sd'>SQL监控详细信息</a>
 
