@@ -825,14 +825,14 @@ Predicate Information (identified by operation id):
   请输入sql_id
   Specify [6m0xgkc6rhrf9] for sql_id
   正在tuning sql,请耐心等候．．．
-  任务[DLT_SQLACCESS_201706291605]分析完成。
-
+  任务[DLT_SQLACCESS_201706291605]分析完成。
+  
   任务信息如下:
-   TASK_ID STATUS     RECOMMENDATION_COUNT
+  TASK_ID STATUS     RECOMMENDATION_COUNT
   ---------- ---------- --------------------
           85 COMPLETED                     1
-
-  建议执行以下优化脚本:
+  
+  建议执行以下优化脚本:
   -----------------------------------------------------------------------------------------
   Rem  SQL Access Advisor: Version 12.1.0.2.0 - Production
   Rem
@@ -862,7 +862,7 @@ Predicate Information (identified by operation id):
       COMPUTE STATISTICS;
 
   -----------------
-  please more [E:\oradba_output\study-sql_access3_6m0xgkc6rhrf9.txt]。
+  please more [E:\oradba_output\study-sql_access3_6m0xgkc6rhrf9.txt]。
   ```
 
   ​
