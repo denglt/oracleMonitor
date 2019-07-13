@@ -43,3 +43,4 @@ SQL> @dltInstaller
 ...
 后台脚本安装完成!
 ```
+>注意：请以“conn / @localhost:1521/pdboradlt  as sysdba”方式连接数据库，否则后续脚本无法自动使用创建的新用户重新登录上oracle。
