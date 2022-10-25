@@ -25,7 +25,7 @@ thanks.
 
 |                   支付宝                    |                    微信                    | PayPal                                   |
 | :--------------------------------------: | :--------------------------------------: | ---------------------------------------- |
-| <img src="../images/money/zfb_266.png?raw=true" width="250px"/> | <img src="../images/money/wx_266.png" width="250px"/> | <a href='https://www.paypal.me/denglt/55' target='_blank'>![z](https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg)</a> |
+| <img src="https://user-images.githubusercontent.com/22925098/197671215-22c3d43b-e115-4dc8-ae12-04e2486c7606.png" width="250px"/> | <img src="../images/money/wx_266.png" width="250px"/> | <a href='https://www.paypal.me/denglt/55' target='_blank'>![z](https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg)</a> |
 
 **方式二：** `366元可获取全套无加密脚本，并附送作者自己整理的一套学习资料`
 
@@ -36,3 +36,4 @@ thanks.
 附送：`性能分析SQL和数据库管理`
 
 ![oracle_docs](../images/oracle_docs.png)
+![zfb_266]()
