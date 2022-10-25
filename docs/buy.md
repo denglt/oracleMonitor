@@ -25,7 +25,7 @@ thanks.
 
 |                   支付宝                    |                    微信                    | PayPal                                   |
 | :--------------------------------------: | :--------------------------------------: | ---------------------------------------- |
-| <img src="../images/money/zfb_266.png" width="250px"/> | <img src="../images/money/wx_266.png" width="250px"/> | <a href='https://www.paypal.me/denglt/55' target='_blank'>![z](https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg)</a> |
+| <img src="../images/money/zfb_266.png?raw=true" width="250px"/> | <img src="../images/money/wx_266.png" width="250px"/> | <a href='https://www.paypal.me/denglt/55' target='_blank'>![z](https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg)</a> |
 
 **方式二：** `366元可获取全套无加密脚本，并附送作者自己整理的一套学习资料`
 
