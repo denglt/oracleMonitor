@@ -23,14 +23,14 @@
 
 |                         支付宝                         |                         微信                          | PayPal                                                                                                                               |
 | :----------------------------------------------------: | :---------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="../images/newmoney/zfb_266.PNG" width="250px"/> | <img src="../images/newmoney/wx_266.PNG" width="250px"/> | <a href='https://www.paypal.me/denglt/55' target='_blank'>![z](https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg)</a> |
+| <img src="https://user-images.githubusercontent.com/22925098/197696566-61477743-a6e8-4b29-8fc7-735d39c8b97a.png" width="250px"/> | <img src="https://user-images.githubusercontent.com/22925098/197696658-2a293c7a-15bb-47c0-9e9c-10bc2a764861.png" width="250px"/> | <a href='https://www.paypal.me/denglt/55' target='_blank'>![z](https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg)</a> |
 
 **方式二：** `366元可获取全套无加密脚本，并附送作者自己整理的一套学习资料`
 
 |                         支付宝                         |                          微信                          | PayPal                                                                                                                              |
 | :----------------------------------------------------: | :----------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="../images/money/zfb_366.png" width="250px"/> | <img src="../images/money/wx_366.png" width="250px" /> | <a href='https://www.paypal.me/denglt/70' target='_blank'>![](https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg)</a> |
+| <img src="https://user-images.githubusercontent.com/22925098/197696597-7f7572e2-f419-4c01-a7fe-35dc05950fd0.png" width="250px"/> | <img src="https://user-images.githubusercontent.com/22925098/197696699-58d9ff98-a31b-4a67-bf94-87f5af8f81d1.png" width="250px" /> | <a href='https://www.paypal.me/denglt/70' target='_blank'>![](https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg)</a> |
 
 附送：`性能分析SQL和数据库管理`
 
-![oracle_docs](../images/oracle_docs.png)
+![oracle_docs](https://user-images.githubusercontent.com/22925098/197696754-10202bb1-ba5c-488b-8fb5-c7e46f94ad36.png)
