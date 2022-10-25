@@ -268,7 +268,8 @@ end;
 18:14:40 study>
 ```
 
-![ddl_domain_idx](../images/ddl_domain_idx.png)
+[//]:![ddl_domain_idx](../images/ddl_domain_idx.png)
+![ddl_domain_idx](https://user-images.githubusercontent.com/22925098/197700145-b9072c9c-74e9-4109-aa3e-ae9a95b2ffe1.png)
 
 [study-ddl_domain_idx_MED2_IDXFT_BIGTABLE_CHEM_NAME.sql](../scriptlog/study-ddl_domain_idx_MED2_IDXFT_BIGTABLE_CHEM_NAME.sql)
 

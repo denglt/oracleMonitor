@@ -38,7 +38,8 @@ INST_ID 表空间        表空间大小(M) 已使用空间(M) 空闲空间(M) �
 please more [E:\oradba_output\study-ss_tablespace.txt]。
 ```
 
-![ss_tablespace](../images/ss_tablespace.png)
+[//]:![ss_tablespace](../images/ss_tablespace.png)
+![ss_tablespace](https://user-images.githubusercontent.com/22925098/197696901-1bd98379-f872-40e9-b2f2-7eff3ee62064.png)
 
 > 详细输出内容：[表空间使用情况](../scriptlog/study-ss_tablespace.txt)
 
@@ -66,8 +67,8 @@ TEMP                       20             2          18   10.00%              13
          1 TEMP                                      20             2          18   10.00%              13        11
 ```
 
-![ss_temptablespace](../images/ss_temptablespace.png)
-
+[//]:![ss_temptablespace](../images/ss_temptablespace.png)
+![ss_temptablespace](https://user-images.githubusercontent.com/22925098/197696932-19706124-3445-4755-87df-2ab7e1269661.png)
 
 
 ### <a name='ss_undo'>undo表空间使用情况</a>
@@ -140,7 +141,8 @@ UNDOTBS1                       UNEXPIRED           61.31
 please more [E:\oradba_output\study-ss_datafile.txt]。
 ```
 
-![ss_datafile](../images/ss_datafile.png)
+[//]:![ss_datafile](../images/ss_datafile.png)
+![ss_datafile](https://user-images.githubusercontent.com/22925098/197700136-c32bba74-0cec-496b-b154-efcc691a46bc.png)
 
 > 详细输出内容：[数据文件使用情况日志](../scriptlog/study-ss_datafile.txt)
 
@@ -161,7 +163,8 @@ UNDOTBS1                       UNEXPIRED           61.31
 please more [E:\oradba_output\study-ss_tempdatafile.txt]。
 ```
 
-![ss_tempdatafile](../images/ss_tempdatafile.png)
+[//]:![ss_tempdatafile](../images/ss_tempdatafile.png)
+![ss_tempdatafile](https://user-images.githubusercontent.com/22925098/197697084-36a50021-4c15-42e0-97e4-24d6ccbb06f2.png)
 
 > 详细输出内容：[临时表空间文件使用情况日志](../scriptlog/study-ss_tempdatafile.txt)
 
@@ -408,7 +411,8 @@ USERS           D:\APP\ORACLE\ORADATA\ORADLT\USERS01.DBF                   99   
 please more [E:\oradba_output\study-ss_datafile_io.txt]。
 ```
 
-![ss_datafile_io](../images/ss_datafile_io.png)
+[//]:![ss_datafile_io](../images/ss_datafile_io.png)
+![ss_datafile_io](https://user-images.githubusercontent.com/22925098/197700151-f04021b5-e84f-464a-9c67-16f75714789a.png)
 
 > 详细输出日志：[数据文件IO统计日志](../scriptlog/study-ss_datafile_io.txt)
 
@@ -457,7 +461,8 @@ APEX_04020 WWV_FLOW_LOG_HISTORY_IDX1                                     INDEX  
 please more [E:\oradba_output\study-ss_segment_io.txt]。
 ```
 
-![ss_segment_io](../images/ss_segment_io.png)
+[//]:![ss_segment_io](../images/ss_segment_io.png)
+![ss_segment_io](https://user-images.githubusercontent.com/22925098/197700160-dd9e9d34-b372-4087-ac33-0946e1b27123.png)
 
 > 详细输出日志：[segment对象IO统计日志](../scriptlog/study-ss_segment_io.txt)
 

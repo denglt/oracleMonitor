@@ -201,7 +201,8 @@ SQL参数信息如下：
 please more [E:\oradba_output\study-sql_info_7xbz512sqhw2k.txt]。
 ```
 
-![sql_info](image/sql_info.png)
+[//]:![sql_info](../images/sql_info.png)
+![sql_info](https://user-images.githubusercontent.com/22925098/197696909-37fb4b6a-b463-416c-9f68-c0b2c1938624.png)
 
 > 详细输出内容：[分析SQL运行信息日志](../scriptlog/study-sql_info_7xbz512sqhw2k.txt)
 
@@ -894,7 +895,9 @@ please more [E:\oradba_output\study-sql_monitor_list_201706301432-24.html]。
   ```
 
 在浏览器中打开:
-![rpt_sml](../images/rpt_sml.png)
+
+[//]:![rpt_sml](../images/rpt_sml.png)
+![rpt_sml](https://user-images.githubusercontent.com/22925098/197696916-f0cdd55c-cff0-45b3-8826-6906aa9f47ba.png)
 >如果在浏览器中打开看不到内容，请把sqlmon文件夹中的内容拷贝到前面设置的文件结果输出路径(script_output_dir)下。
 
 #### <a name='rpt_sm'>SQL监控报告</a>
@@ -996,7 +999,9 @@ open [E:\oradba_output\study-sql_monitor_a3w7p0wh33s3d.html]...
 ```
 
 在浏览器中打开:
-![rpt_sm](../images/rpt_sm.png)
+
+[//]:![rpt_sm](../images/rpt_sm.png)
+![rpt_sm](https://user-images.githubusercontent.com/22925098/197696874-cd2b60f5-18f9-418f-adcd-9dea4258de7b.png)
 
 #### <a name='rpt_sd'>SQL监控详细信息</a>
 

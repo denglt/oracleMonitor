@@ -26,11 +26,13 @@ sess_cpu.sql		sess_longlock.sql	sess_tempseg.sql
 正在生成阻塞锁信息，请稍等．．．
 ```
 
-![sess_blocklock](../images/sess_blocklock.png)
+[//]:![sess_blocklock](../images/sess_blocklock.png)
+![sess_blocklock](https://user-images.githubusercontent.com/22925098/197696867-6a2cd1a1-ca30-4935-9705-7408c90157ed.png)
 
 脚本自动用`open_file_text`配置的工具打开[阻塞锁日志](../scriptlog/study-sess_blocklock.txt)，该文件保存在`script_output_dir`配置的文件夹中
 
-![sess_blocklock2](../images/sess_blocklock2.png)
+[//]:![sess_blocklock2](../images/sess_blocklock2.png)
+![sess_blocklock2](https://user-images.githubusercontent.com/22925098/197697089-b82e89f4-f371-4b4e-b337-707ce92814b4.png)
 
 > * 以树状格式展示lock的阻塞关系
 > * `LOCKKEY`格式:  INSTANCE_ID+SID+SERIAL#
@@ -57,7 +59,8 @@ Specify [60] for lock time
 正在生成长时间锁信息，请稍等．．．
 ```
 
-![sess_longlock](../images/sess_longlock.png)
+[//]:![sess_longlock](../images/sess_longlock.png)
+![sess_longlock](https://user-images.githubusercontent.com/22925098/197696825-3be9dbd6-7f32-4531-acb5-c64ad3bd7209.png)
 
 > `Lock Time(s)`:Lock时长，单位秒
 >
@@ -90,7 +93,8 @@ Specify [60] for lock time
 正在生成耗时SQL信息，请稍等．．．
 ```
 
-![sess_longops](../images/sess_longops.png)
+[//]:![sess_longops](../images/sess_longops.png)
+![sess_longops](https://user-images.githubusercontent.com/22925098/197700157-032a4a2a-38b9-4df8-9c5f-9ceef9df66d2.png)
 
 > 详细输出内容：[慢SQL日志](../scriptlog/study-sess_longops.txt)
 
@@ -133,7 +137,8 @@ Specify [60] for lock time
 open [E:\oradba_output\study-sess_undo.txt]...
 ```
 
-![sess_undo](../images/sess_undo.png)
+[//]:![sess_undo](../images/sess_undo.png)
+![sess_undo](https://user-images.githubusercontent.com/22925098/197697071-a6c14331-1f56-48fb-9ec3-bedd69473df1.png)
 
 > 详细输出内容：[session占用undo空间大小日志](../scriptlog/study-sess_undo.txt)
 
@@ -160,7 +165,8 @@ session使用cpu的情况(使用cpu时间最多前10条数据)
          1         62      22225               1 INACTIVE 2017-06-15 17:00:56 9m7787camwh4m MED2                   plsqldev.exe
 ```
 
-![sess_cpu](../images/sess_cpu.png)
+[//]:![sess_cpu](../images/sess_cpu.png)
+![sess_cpu](https://user-images.githubusercontent.com/22925098/197696854-e4dec9d1-48c1-4785-8e8b-14c9b4d3b9f3.png)
 
 > 详细输出内容：[session使用cpu日志](../scriptlog/study-sess_cpu.txt)
 
@@ -181,7 +187,8 @@ session使用temp表空间的情况(占用临时表空间最多前10条数据)
 please more [E:\oradba_output\study-sess_tempseg.txt]。
 ```
 
-![sess_tempseg](../images/sess_tempseg.png)
+[//]:![sess_tempseg](../images/sess_tempseg.png)
+![sess_tempseg](https://user-images.githubusercontent.com/22925098/197696887-56d8330f-94c6-43e7-a65c-02cfbc528efb.png)
 
 > 详细输出内容：[session占用temp tablespace的大小日志](../scriptlog/study-sess_tempseg.txt)
 
@@ -215,7 +222,8 @@ Tuning OPEN_CURSORS
 .....
 ```
 
-![sess_cursor](../images/sess_cursor.png)
+[//]:![sess_cursor](../images/sess_cursor.png)
+![sess_cursor](https://user-images.githubusercontent.com/22925098/197696894-d6dda77f-42d4-42f6-9ee8-41214a5cb144.png)
 
 > 详细输出内容：[session使用cursor总体情况日志](../scriptlog/study-sess_cursor.txt)
 
