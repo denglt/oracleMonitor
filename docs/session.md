@@ -115,7 +115,8 @@ Specify [60] for lock time
          1         19      29226 528                                 3            13               10          15 ACTIVE   cgtc5gb7c4g07
 ```
 
-![sess_pga](../images/sess_pga.png)
+[//]:![sess_pga](../images/sess_pga.png)
+![sess_pga](https://user-images.githubusercontent.com/22925098/197696859-3a654146-0121-4cfc-ac62-ef16efc8d526.png)
 
 > 详细输出内容：[session使用PGA日志](../scriptlog/study-sess_pga.txt)
 
@@ -198,7 +199,8 @@ session使用temp表空间的情况(占用临时表空间最多前10条数据)
 >
 > Usage: @sess_tempseg_detail <sid>
 
-![sess_tempseg_detail](../images/sess_tempseg_detail.png)
+[//]:![sess_tempseg_detail](../images/sess_tempseg_detail.png)
+![sess_tempseg_detail](https://user-images.githubusercontent.com/22925098/197696849-fc0ebdf5-d338-40f2-a1cc-4af2069309b4.png)
 
 > 详细输出内容：[session占用temp tablespace详细信息日志](../scriptlog/study-sess_tempseg_detail_52.txt)
 
